@@ -1,0 +1,14 @@
+Package: strandseqExampleData
+Type: Package
+Title: Strand-seq Data for Demonstration Purposes
+Version: 0.99.0
+Date: 2016-08
+Author: Aaron Taudt, David Porubsky
+Maintainer: David Porubsky <david.porubsky@gmail.com>
+Description: Strand-seq data to demonstrate functionalities
+    of BreakPointR package.
+Depends: R (>= 3.4)
+License: file LICENSE
+biocViews: Homo_sapiens_Data, CellCulture, SequencingData
+NeedsCompilation: no
+RoxygenNote: 6.0.1
