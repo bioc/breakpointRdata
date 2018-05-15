@@ -1,0 +1,70 @@
+%\VignetteIndexEntry{Example data for BreakPointR}
+%\VignetteEngine{knitr::knitr}
+\documentclass[11pt]{article}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage[authoryear,round]{natbib}
+\bibliographystyle{plainnat}
+
+\newcommand{\scscst}{\scriptscriptstyle}
+\newcommand{\scst}{\scriptstyle}
+
+\newcommand{\Rfunction}[1]{{\texttt{#1}}}
+\newcommand{\Roption}[1]{{\texttt{#1}}}
+\newcommand{\Robject}[1]{{\texttt{#1}}}
+\newcommand{\Rpackage}[1]{{\textit{#1}}}
+
+\author{David Porubsky\footnote{david.porubsky@gmail.com}}
+\begin{document}
+\title{Example data for BreakPointR}
+
+\maketitle
+
+\tableofcontents
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Data description}
+This package provides data for demonstration purposes in package \Rpackage{breakpointR}. It contains five example BAM files to illustrate functionlities of \Rpackage{breakpointR} package, as well as corresponding results stored in \Robject{BreakPoint} objects in order to demonstrate plotting options. The following example data are present inside the package \Rpackage{strandseqExampleData}:
+\begin{scriptsize}
+<<>>==
+library(strandseqExampleData)
+?example_bams
+?example_results
+@
+\end{scriptsize}
+
+Example data can be loaded in the following way:
+
+\begin{scriptsize}
+<<>>==
+## Example BAM files
+path <- system.file("extdata", "example_bams", package="strandseqExampleData")
+files <- list.files(path, full.names=TRUE, pattern=".bam$")
+@
+
+<<results='hide', message=FALSE, eval=TRUE, echo=FALSE>>==
+files <- gsub(files, pattern=".*strandseqExampleData", replacement="")
+@
+
+<<>>==
+files
+@
+
+<<>>==
+## Example results
+path <- system.file("extdata", "example_results", package="strandseqExampleData")
+files <- list.files(path, full.names=TRUE)
+@
+
+<<results='hide', message=FALSE, eval=TRUE, echo=FALSE>>==
+files <- gsub(files, pattern=".*strandseqExampleData", replacement="")
+@
+
+<<>>==
+files
+@
+\end{scriptsize}
+
+\end{document}

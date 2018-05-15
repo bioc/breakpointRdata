@@ -1,2 +1,2 @@
-inst/extdata/breakpointer
-inst/extdata/data
+inst/extdata/example_bams
+inst/extdata/example_results
