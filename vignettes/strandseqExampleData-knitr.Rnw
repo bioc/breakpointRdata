@@ -1,0 +1,68 @@
+%\VignetteIndexEntry{Example data for BreakPointR}
+%\VignetteEngine{knitr::knitr}
+\documentclass{article}
+
+<<style-knitr, eval=TRUE, echo=FALSE, results='asis'>>=
+BiocStyle::latex()
+@
+  
+\author{David Porubsky\thanks{\email{david.porubsky@gmail.com}}}
+\title{Example data for BreakPointR}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\clearpage
+<<options, results='hide', message=FALSE, eval=TRUE, echo=FALSE>>=
+library(strandseqExampleData)
+options(width=90)
+@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Data description}
+This package provides data for demonstration purposes in package breakpointR. It contains five example BAM files to illustrate functionlities of breakpointR package, as well as corresponding results stored in 'BreakPoint' objects in order to demonstrate plotting options. The following example data are present inside the package \Rpackage{strandseqExampleData}:
+  
+<<eval=TRUE>>==
+library(strandseqExampleData)
+?example_bams
+?example_results
+@
+  
+Example data can be loaded in the following way:
+  
+<<eval=TRUE>>==
+## Example BAM files
+path <- system.file("extdata", "example_bams", package="strandseqExampleData")
+files <- list.files(path, full.names=TRUE, pattern=".bam$")
+@
+  
+<<message=FALSE, eval=TRUE, echo=FALSE>>==
+files <- gsub(files, pattern=".*strandseqExampleData", replacement="")
+@
+  
+<<eval=TRUE>>==
+files
+@
+  
+<<eval=TRUE>>==
+## Example results
+path <- system.file("extdata", "example_results", package="strandseqExampleData")
+files <- list.files(path, full.names=TRUE)
+@
+  
+<<message=FALSE, eval=TRUE, echo=FALSE>>==
+files <- gsub(files, pattern=".*strandseqExampleData", replacement="")
+@
+  
+<<eval=TRUE>>==
+files
+@
+
+\newpage  
+  
+\section{Session Info}
+
+<<sessionInfo, results='asis', eval=TRUE>>=
+toLatex(sessionInfo())
+@
+  
+\end{document}

@@ -7,8 +7,14 @@ Author: Aaron Taudt, David Porubsky
 Maintainer: David Porubsky <david.porubsky@gmail.com>
 Description: Strand-seq data to demonstrate functionalities
     of BreakPointR package.
-Depends: R (>= 3.4)
+Depends:
+  R (>= 3.4)
+Suggests:
+  knitr,
+  BiocStyle, 
 License: file LICENSE
-biocViews: Homo_sapiens_Data, CellCulture, SequencingData
+VignetteBuilder: knitr
+biocViews: ExperimentData, Homo_sapiens_Data, SequencingData, DNASeqData
 NeedsCompilation: no
+URL: https://github.com/daewoooo/strandseqExampleData
 RoxygenNote: 6.0.1
