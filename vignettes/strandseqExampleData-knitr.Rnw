@@ -1,4 +1,4 @@
-%\VignetteIndexEntry{Example data for BreakPointR}
+%\VignetteIndexEntry{Example data for breakpointR}
 %\VignetteEngine{knitr::knitr}
 \documentclass{article}
 
@@ -7,7 +7,7 @@ BiocStyle::latex()
 @
   
 \author{David Porubsky\thanks{\email{david.porubsky@gmail.com}}}
-\title{Example data for BreakPointR}
+\title{Example data for breakpointR}
 
 \begin{document}
 \maketitle
