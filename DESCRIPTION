@@ -8,7 +8,7 @@ Maintainer: David Porubsky <david.porubsky@gmail.com>
 Description: Strand-seq data to demonstrate functionalities
     of breakpointR package.
 Depends:
-  R (>= 3.4)
+  R (>= 3.4)  
 Suggests:
   knitr,
   BiocStyle, 

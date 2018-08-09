@@ -7,8 +7,11 @@
 \title{Example BAM-files}
 \format{A BAM files with aligned reads.}
 \source{
-A lyphoblastoid cell line of Puerto Rican origin (HG00731). Raw reads were aligned to the GRCh38/hg38 reference assembly. The file has been downsampled to 20\% of the coverage to reduce the file size???. For further details see TODO: insert publication.
+A lyphoblastoid cell line of Puerto Rican origin (HG00731). Raw reads were aligned to the GRCh38/hg38 reference assembly. The file has been downsampled to 20\% of the coverage to reduce the file size.
 }
 \description{
 A set of BAM-files for demonstration purposes of the functions in package \pkg{breakpointR}.
+}
+\references{
+\url{https://www.biorxiv.org/content/early/2017/09/23/193144}
 }
