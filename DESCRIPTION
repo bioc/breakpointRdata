@@ -1,14 +1,14 @@
 Package: breakpointRdata
 Type: Package
 Title: Strand-seq data for demonstration purposes
-Version: 0.99.0
+Version: 0.99.1
 Date: 2016-08
 Author: Aaron Taudt, David Porubsky
 Maintainer: David Porubsky <david.porubsky@gmail.com>
 Description: Strand-seq data to demonstrate functionalities
     of breakpointR package.
 Depends:
-  R (>= 3.4)  
+  R (>= 3.5)  
 Suggests:
   knitr,
   BiocStyle, 
@@ -17,4 +17,4 @@ VignetteBuilder: knitr
 biocViews: ExperimentData, Homo_sapiens_Data, SequencingData, DNASeqData
 NeedsCompilation: no
 URL: https://github.com/daewoooo/breakpointRdata
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.0
