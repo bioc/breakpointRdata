@@ -5,12 +5,16 @@
 \alias{example_bams}
 \alias{bams}
 \title{Example BAM-files}
-\format{A BAM files with aligned reads.}
+\format{A BAM files with aligned reads with one read per line.}
 \source{
 A lyphoblastoid cell line of Puerto Rican origin (HG00731). Raw reads were aligned to the GRCh38/hg38 reference assembly. The file has been downsampled to 20\% of the coverage to reduce the file size.
 }
 \description{
 A set of BAM-files for demonstration purposes of the functions in package \pkg{breakpointR}.
+}
+\details{
+BAM files contain single-end reads aligned to GRCh38 reference genome. \cr
+Read sequences and quality values have been removed in order to reduce the file size.
 }
 \references{
 \url{https://www.biorxiv.org/content/early/2017/09/23/193144}

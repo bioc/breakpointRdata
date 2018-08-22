@@ -5,7 +5,9 @@
 #' @docType data
 #' @name example_bams
 #' @aliases bams
-#' @format A BAM files with aligned reads.
+#' @format A BAM files with aligned reads with one read per line.
+#' @details BAM files contain single-end reads aligned to GRCh38 reference genome. \cr
+#' Read sequences and quality values have been removed in order to reduce the file size.
 #' @source A lyphoblastoid cell line of Puerto Rican origin (HG00731). Raw reads were aligned to the GRCh38/hg38 reference assembly. The file has been downsampled to 20\% of the coverage to reduce the file size. 
 #' @references \url{https://www.biorxiv.org/content/early/2017/09/23/193144}
 NULL
@@ -18,6 +20,18 @@ NULL
 #' @name example_results
 #' @aliases results
 #' @format Files containing \code{BreakPoint} object.
+#' @details 
+#' A \code{BreakPoint} object is a \code{list} containing given elements: ID, fragments, deltas, breaks, confint, counts, lib.metrics and params.
+#' \itemize{
+#'    \item ID - unique identifier for a given library.
+#'    \item fragments - A \code{GRanges-class} object that stores analyzed sequencing reads.
+#'    \item deltas - A \code{GRanges-class} object that stores binned minus reads differences.
+#'    \item breaks - A \code{GRanges-class} object that stores localized breaks.
+#'    \item confint - A \code{GRanges-class} object that stores confidence intervals around localized breaks.
+#'    \item counts - A \code{GRanges-class} object that stores directional read counts in between localized breaks.
+#'    \item lib.metrics - A named \code{vector} with some useful library metrics.
+#'    \item params - A named \code{vector} with user defined parameters used to run \pkg{breakpointR} package.
+#' }
 #' @source A lyphoblastoid cell line of Puerto Rican origin (HG00731). Raw reads were aligned to the GRCh38/hg38 reference assembly.
 #' @references \url{https://www.biorxiv.org/content/early/2017/09/23/193144}
 NULL
