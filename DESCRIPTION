@@ -1,7 +1,7 @@
 Package: breakpointRdata
 Type: Package
 Title: Strand-seq data for demonstration purposes
-Version: 1.1.0
+Version: 1.2.0
 Date: 2016-08
 Author: David Porubsky, Aaron Taudt, Ashley Sanders
 Maintainer: David Porubsky <david.porubsky@gmail.com>
